@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Funktionen", href: "#funktionen" },
-  { label: "Für Ärzte", href: "#fuer-aerzte" },
-  { label: "Für Patienten", href: "#fuer-patienten" },
-  { label: "Sicherheit", href: "#sicherheit" },
-  { label: "Preise", href: "#preise" },
+  { label: "Funktionen", href: "/#funktionen" },
+  { label: "Für Ärzte", href: "/fuer-aerzte" },
+  { label: "Sicherheit", href: "/#sicherheit" },
 ];
 
 export default function Navbar() {
@@ -47,16 +46,31 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
+  const router = useRouter();
+  const pathname = usePathname();
+
   const handleNavClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-      e.preventDefault();
       setMobileOpen(false);
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
+
+      // If it's a hash link on the home page (e.g. /#funktionen)
+      if (href.startsWith("/#")) {
+        e.preventDefault();
+        const hash = href.slice(1); // remove leading /
+        if (pathname === "/") {
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          router.push(href);
+        }
+        return;
       }
+
+      // Regular page links — let Next.js handle them
     },
-    []
+    [pathname, router]
   );
 
   return (
@@ -71,11 +85,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
+            href="/"
             className="flex items-center gap-2 shrink-0"
           >
             <Image
@@ -107,7 +117,7 @@ export default function Navbar() {
           {/* Desktop CTA + Mobile hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="#demo"
+              href="/#demo"
               onClick={(e) => handleNavClick(e, "#demo")}
               className="hidden lg:inline-flex items-center px-5 py-2 text-sm font-medium text-white bg-[#0C8A72] rounded-full transition-colors duration-200 hover:bg-[#10A88A]"
             >
@@ -169,7 +179,7 @@ export default function Navbar() {
           </div>
           <div className="mt-4 px-3">
             <a
-              href="#demo"
+              href="/#demo"
               onClick={(e) => handleNavClick(e, "#demo")}
               className="flex items-center justify-center w-full px-5 py-2.5 text-sm font-medium text-white bg-[#0C8A72] rounded-full transition-colors duration-200 hover:bg-[#10A88A]"
             >

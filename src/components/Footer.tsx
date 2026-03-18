@@ -1,10 +1,9 @@
 import Image from "next/image";
 
 const productLinks = [
-  { label: "Funktionen", href: "#funktionen" },
-  { label: "F\u00fcr \u00c4rzte", href: "#fuer-aerzte" },
-  { label: "Sicherheit", href: "#sicherheit" },
-  { label: "Preise", href: "#preise" },
+  { label: "Funktionen", href: "/#funktionen" },
+  { label: "Für Ärzte", href: "/fuer-aerzte" },
+  { label: "Sicherheit", href: "/#sicherheit" },
 ];
 
 const legalLinks = [
