@@ -7,7 +7,7 @@ export default function PatientDemo() {
           <p className="text-sm font-semibold tracking-widest uppercase text-[#0C8A72] mb-3">
             SO FUNKTIONIERT ES
           </p>
-          <h2 className="text-4xl font-bold text-[#0A3D35] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#0A3D35] mb-4">
             Einfach für Patienten. Wertvoll für Ärzte.
           </h2>
           <p className="text-lg text-[#6B7D77] max-w-3xl mx-auto leading-relaxed">

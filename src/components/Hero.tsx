@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="absolute -left-20 bottom-0 h-[300px] w-[300px] rounded-full bg-[#E6F5F0] opacity-40 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         {/* ─── Top: Text Content ─────────────────── */}
         <div className="text-center max-w-3xl mx-auto">
           {/* Label */}
@@ -16,14 +16,14 @@ export default function Hero() {
           </p>
 
           {/* Headline */}
-          <h1 className="animate-fade-in-up delay-100 mt-6 text-5xl font-bold leading-tight text-[#0A3D35] md:text-6xl lg:text-7xl">
+          <h1 className="animate-fade-in-up delay-100 mt-6 text-3xl sm:text-5xl font-bold leading-tight text-[#0A3D35] md:text-6xl lg:text-7xl">
             Bessere Anamnese.
             <br />
             Mehr Zeit f&uuml;r Patienten.
           </h1>
 
           {/* Subtitle */}
-          <p className="animate-fade-in-up delay-200 mt-6 text-xl leading-relaxed text-[#6B7D77] max-w-2xl mx-auto">
+          <p className="animate-fade-in-up delay-200 mt-6 text-base sm:text-xl leading-relaxed text-[#6B7D77] max-w-2xl mx-auto">
             Die digitale Vorab-Anamnese f&uuml;r Haus- und Zahn&auml;rzte.
             Patienten erfassen ihre Symptome strukturiert vor dem Termin
             &ndash; Sie starten vorbereitet.
@@ -33,37 +33,37 @@ export default function Hero() {
           <div className="animate-fade-in-up delay-300 mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="#demo"
-              className="inline-flex items-center rounded-full bg-[#0C8A72] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#0C8A72]/20 transition-all hover:bg-[#0A3D35] hover:shadow-xl"
+              className="inline-flex items-center rounded-full bg-[#0C8A72] px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-lg shadow-[#0C8A72]/20 transition-all hover:bg-[#0A3D35] hover:shadow-xl"
             >
               Demo anfragen
             </a>
             <a
               href="#patientendemo"
-              className="inline-flex items-center rounded-full border-2 border-[#0C8A72] px-8 py-4 text-base font-semibold text-[#0C8A72] transition-all hover:bg-[#0C8A72] hover:text-white"
+              className="inline-flex items-center rounded-full border-2 border-[#0C8A72] px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-[#0C8A72] transition-all hover:bg-[#0C8A72] hover:text-white"
             >
               Mehr erfahren
             </a>
           </div>
 
           {/* Stat Badges */}
-          <div className="animate-fade-in-up delay-400 mt-14 flex flex-wrap justify-center gap-8 lg:gap-12">
+          <div className="animate-fade-in-up delay-400 mt-10 sm:mt-14 flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-12">
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-[#0C8A72]">15 Min</span>
+              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">15 Min</span>
               <span className="mt-1 text-sm text-[#6B7D77]">Zeitersparnis pro Patient</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-[#0C8A72]">100%</span>
+              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">100%</span>
               <span className="mt-1 text-sm text-[#6B7D77]">DSGVO-konform</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-[#0C8A72]">AES-256</span>
+              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">AES-256</span>
               <span className="mt-1 text-sm text-[#6B7D77]">Verschl&uuml;sselung</span>
             </div>
           </div>
         </div>
 
         {/* ─── Bottom: Two Mini Cards Side by Side ───────── */}
-        <div className="animate-fade-in-up delay-500 mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
+        <div className="animate-fade-in-up delay-500 mt-14 sm:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
 
           {/* ── Mini Patient Chat ── */}
           <div className="rounded-2xl border border-[#EDF2F2] bg-white p-5 shadow-xl">
@@ -254,7 +254,7 @@ export default function Hero() {
         </div>
 
         {/* Bottom status bar */}
-        <div className="animate-fade-in-up delay-500 mt-6 flex items-center justify-center gap-4">
+        <div className="animate-fade-in-up delay-500 mt-6 flex items-center justify-center gap-2 sm:gap-4 flex-wrap">
           <span className="rounded-full bg-white border border-[#EDF2F2] px-3.5 py-1.5 text-[11px] font-medium text-[#0A3D35] shadow-sm">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#0C8A72] mr-1.5 align-middle" />
             3 abgeschlossen
