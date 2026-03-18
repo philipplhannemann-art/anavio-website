@@ -33,11 +33,11 @@ export default function Problem() {
   ];
 
   const processSteps = [
-    { number: 1, title: "Telefon", time: "3\u20135", minutes: 4 },
-    { number: 2, title: "Empfang", time: "5\u201310", minutes: 7.5 },
-    { number: 3, title: "MFA-Triage", time: "2\u20133", minutes: 2.5 },
-    { number: 4, title: "Arztgespr\u00e4ch", time: "7\u201310", minutes: 8.5 },
-    { number: 5, title: "Doku", time: "2\u20135", minutes: 3.5 },
+    { number: 1, title: "Telefon", time: "3\u20135 Min.", minutes: 4 },
+    { number: 2, title: "Empfang", time: "5\u201310 Min.", minutes: 7.5 },
+    { number: 3, title: "MFA-Triage", time: "2\u20133 Min.", minutes: 2.5 },
+    { number: 4, title: "Arztgespr\u00e4ch", time: "7\u201310 Min.", minutes: 8.5 },
+    { number: 5, title: "Doku", time: "2\u20135 Min.", minutes: 3.5 },
   ];
 
   const totalMinutes = processSteps.reduce((sum, s) => sum + s.minutes, 0);
