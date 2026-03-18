@@ -144,12 +144,28 @@ export function CTA() {
                   <option value="" disabled className="text-[#B8C8C4]">
                     Bitte w&auml;hlen
                   </option>
-                  <option value="hausarzt">Hausarzt</option>
-                  <option value="zahnarzt">Zahnarzt</option>
-                  <option value="orthopaede">Orthop&auml;de</option>
+                  <option value="allgemeinmedizin">Allgemeinmedizin / Hausarzt</option>
+                  <option value="innere">Innere Medizin</option>
+                  <option value="orthopaede">Orthop&auml;die</option>
+                  <option value="kardiologie">Kardiologie</option>
+                  <option value="neurologie">Neurologie</option>
                   <option value="hno">HNO</option>
-                  <option value="kinderarzt">Kinderarzt</option>
-                  <option value="gynaekologe">Gyn&auml;kologe</option>
+                  <option value="dermatologie">Dermatologie</option>
+                  <option value="gynaekologe">Gyn&auml;kologie</option>
+                  <option value="urologie">Urologie</option>
+                  <option value="kinderarzt">Kinder- und Jugendmedizin</option>
+                  <option value="augenheilkunde">Augenheilkunde</option>
+                  <option value="psychiatrie">Psychiatrie / Psychotherapie</option>
+                  <option value="chirurgie">Chirurgie</option>
+                  <option value="pneumologie">Pneumologie</option>
+                  <option value="gastroenterologie">Gastroenterologie</option>
+                  <option value="endokrinologie">Endokrinologie / Diabetologie</option>
+                  <option value="rheumatologie">Rheumatologie</option>
+                  <option value="zahnarzt">Zahnmedizin</option>
+                  <option value="radiologie">Radiologie</option>
+                  <option value="anaesthesie">An&auml;sthesiologie</option>
+                  <option value="notfallmedizin">Notfallmedizin</option>
+                  <option value="mvz">MVZ / Praxisklinik</option>
                   <option value="sonstige">Sonstige</option>
                 </select>
               </div>
