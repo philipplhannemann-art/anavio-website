@@ -56,7 +56,14 @@ export default function Hero() {
               <span className="mt-1 text-sm text-[#6B7D77]">DSGVO-konform</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">DE</span>
+              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72] inline-flex items-center gap-2">
+                <span className="inline-flex h-5 w-7 flex-col overflow-hidden rounded-sm shadow-sm">
+                  <span className="h-1/3 w-full bg-black" />
+                  <span className="h-1/3 w-full bg-red-600" />
+                  <span className="h-1/3 w-full bg-yellow-400" />
+                </span>
+                DE
+              </span>
               <span className="mt-1 text-sm text-[#6B7D77]">Hosting in Deutschland</span>
             </div>
           </div>
