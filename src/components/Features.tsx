@@ -5,14 +5,14 @@ export default function Features() {
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#0C8A72]">
-            DREI EBENEN DER INFORMATION
+            WAS SIE ERHALTEN
           </p>
           <h2 className="mt-3 text-4xl font-bold text-[#0A3D35]">
-            Mehr als nur ein Fragebogen
+            Alle Infos auf einen Blick &ndash; bevor der Patient im Sprechzimmer sitzt
           </h2>
           <p className="mt-4 text-lg text-[#6B7D77]">
-            anavio bereitet Patienteninformationen auf drei Ebenen auf – vom
-            strukturierten Überblick bis zu leitlinienbasierten Hinweisen.
+            Symptome, Red Flags und Leitlinien-Hinweise &ndash; automatisch
+            strukturiert und klinisch aufbereitet in Ihrem Dashboard.
           </p>
         </div>
 
@@ -187,8 +187,8 @@ export default function Features() {
             </div>
 
             {/* Badge */}
-            <span className="inline-block rounded-full bg-[#F5A623]/10 px-3 py-1 text-xs font-semibold text-[#F5A623]">
-              Nach rechtl. Prüfung
+            <span className="inline-block rounded-full bg-[#27AE60]/10 px-3 py-1 text-xs font-semibold text-[#27AE60]">
+              Sofort verf&uuml;gbar
             </span>
 
             {/* Title */}

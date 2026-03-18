@@ -25,12 +25,12 @@ export default function Security() {
             </h3>
             <ul className="space-y-4">
               {[
-                "Art. 9 DSGVO: Explizite Einwilligung für Gesundheitsdaten",
-                "Art. 28 DSGVO: AV-Verträge mit jeder Praxis",
+                "Patienten geben explizit ihre Einwilligung zur Datenverarbeitung",
+                "Datenschutz-Vertrag (AV-Vertrag) mit jeder Praxis",
                 "Hosting in Deutschland (ISO 27001 zertifiziert)",
-                "Ende-zu-Ende-Verschlüsselung (TLS 1.3 + AES-256)",
-                "Automatisches Löschkonzept nach PVS-Übertragung",
-                "Datenschutz-Folgenabschätzung (Art. 35)",
+                "Verschl\u00fcsselung aller Daten bei \u00dcbertragung und Speicherung",
+                "Automatische L\u00f6schung nach \u00dcbertragung ans PVS",
+                "Unabh\u00e4ngige Datenschutz-Bewertung durchgef\u00fchrt",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   {/* Teal checkmark circle */}
@@ -100,175 +100,67 @@ export default function Security() {
           </div>
         </div>
 
-        {/* PVS Integration Phases */}
+        {/* PVS Integration */}
         <div className="mt-16">
           <h3 className="mb-8 text-center text-lg font-bold text-[#0A3D35]">
-            PVS-Integrationspfad
+            Passt in Ihren Praxisalltag
           </h3>
-          <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-0">
-            {/* Phase 1 */}
+          <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center md:gap-6">
+            {/* Sofort nutzbar */}
             <div className="flex w-full max-w-xs flex-col items-center rounded-2xl border border-[#EDF2F2] bg-white px-6 py-6 text-center">
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#27AE60]/10">
-                <svg
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
+                <svg className="h-5 w-5" viewBox="0 0 20 20" fill="none">
                   <circle cx="10" cy="10" r="8" stroke="#27AE60" strokeWidth="2" />
-                  <path
-                    d="M6.5 10.5L9 13L14 7.5"
-                    stroke="#27AE60"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
+                  <path d="M6.5 10.5L9 13L14 7.5" stroke="#27AE60" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <p className="text-xs font-semibold uppercase tracking-wider text-[#27AE60]">
-                Phase 1
+                Sofort nutzbar
               </p>
               <p className="mt-1 text-sm font-bold text-[#0A3D35]">
-                PDF + Dashboard
+                Web-Dashboard + PDF-Export
+              </p>
+              <p className="mt-0.5 text-xs text-[#6B7D77]">
+                Kein Download, kein Setup
               </p>
             </div>
 
-            {/* Arrow 1 */}
-            <div className="hidden md:flex md:items-center md:px-3">
-              <svg
-                className="h-5 w-8 text-[#EDF2F2]"
-                viewBox="0 0 32 20"
-                fill="none"
-              >
-                <path
-                  d="M0 10H28M28 10L22 4M28 10L22 16"
-                  stroke="#0C8A72"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            {/* Mobile arrow */}
-            <div className="flex md:hidden">
-              <svg
-                className="h-8 w-5"
-                viewBox="0 0 20 32"
-                fill="none"
-              >
-                <path
-                  d="M10 0V28M10 28L4 22M10 28L16 22"
-                  stroke="#0C8A72"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-
-            {/* Phase 2 */}
+            {/* PVS-Anbindung */}
             <div className="flex w-full max-w-xs flex-col items-center rounded-2xl border border-[#EDF2F2] bg-white px-6 py-6 text-center">
-              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#F5A623]/10">
-                <svg
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <rect
-                    x="3"
-                    y="3"
-                    width="14"
-                    height="14"
-                    rx="3"
-                    stroke="#F5A623"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M7 10H13"
-                    stroke="#F5A623"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M10 7V13"
-                    stroke="#F5A623"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#0C8A72]/10">
+                <svg className="h-5 w-5" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="3" width="14" height="14" rx="3" stroke="#0C8A72" strokeWidth="2" />
+                  <path d="M7 10H13" stroke="#0C8A72" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M10 7V13" stroke="#0C8A72" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#F5A623]">
-                Phase 2
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#0C8A72]">
+                PVS-Anbindung
               </p>
               <p className="mt-1 text-sm font-bold text-[#0A3D35]">
                 GDT-Schnittstelle
               </p>
               <p className="mt-0.5 text-xs text-[#6B7D77]">
-                CGM, medatixx, Dampsoft
+                CGM, medatixx, Dampsoft u.a.
               </p>
             </div>
 
-            {/* Arrow 2 */}
-            <div className="hidden md:flex md:items-center md:px-3">
-              <svg
-                className="h-5 w-8 text-[#EDF2F2]"
-                viewBox="0 0 32 20"
-                fill="none"
-              >
-                <path
-                  d="M0 10H28M28 10L22 4M28 10L22 16"
-                  stroke="#0C8A72"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            {/* Mobile arrow */}
-            <div className="flex md:hidden">
-              <svg
-                className="h-8 w-5"
-                viewBox="0 0 20 32"
-                fill="none"
-              >
-                <path
-                  d="M10 0V28M10 28L4 22M10 28L16 22"
-                  stroke="#0C8A72"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-
-            {/* Phase 3 */}
+            {/* Kein Aufwand */}
             <div className="flex w-full max-w-xs flex-col items-center rounded-2xl border border-[#EDF2F2] bg-white px-6 py-6 text-center">
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#2C5F7C]/10">
-                <svg
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <circle
-                    cx="10"
-                    cy="10"
-                    r="7"
-                    stroke="#2C5F7C"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M10 6V10L13 13"
-                    stroke="#2C5F7C"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
+                <svg className="h-5 w-5" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="7" stroke="#2C5F7C" strokeWidth="2" />
+                  <path d="M10 6V10L13 13" stroke="#2C5F7C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <p className="text-xs font-semibold uppercase tracking-wider text-[#2C5F7C]">
-                Phase 3
+                F&uuml;r Ihr Team
               </p>
               <p className="mt-1 text-sm font-bold text-[#0A3D35]">
-                REST-API & FHIR
+                Einrichtung in 15 Minuten
+              </p>
+              <p className="mt-0.5 text-xs text-[#6B7D77]">
+                Pers&ouml;nliches Onboarding inklusive
               </p>
             </div>
           </div>
