@@ -132,7 +132,7 @@ export function CTA() {
           {[
             { value: "60+", label: "Arztpraxen" },
             { value: "5", label: "Fachrichtungen" },
-            { value: "10 Min", label: "Zeitersparnis" },
+            { value: "15 Min", label: "Zeitersparnis" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-3xl font-bold text-white">{stat.value}</p>

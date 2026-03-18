@@ -17,21 +17,13 @@ export default function Impressum() {
             Anbieter
           </h2>
           <p className="text-[#3A4A44] leading-relaxed">
-            anavio GmbH (i.Gr.)
+            Leon Marc Schuler
             <br />
-            [Stra&szlig;e und Hausnummer]
+            Kaiser-Friedrich-Promenade 114
             <br />
-            [PLZ] [Ort]
+            61352 Bad Homburg vor der H&ouml;he
             <br />
             Deutschland
-          </p>
-
-          {/* Vertreten durch */}
-          <h2 className="text-xl font-semibold text-[#0A3D35] mt-10 mb-3">
-            Vertreten durch
-          </h2>
-          <p className="text-[#3A4A44] leading-relaxed">
-            Gesch&auml;ftsf&uuml;hrer: [Name des Gesch&auml;ftsf&uuml;hrers]
           </p>
 
           {/* Kontakt */}
@@ -47,21 +39,6 @@ export default function Impressum() {
               kontakt@anavio.de
             </a>
             <br />
-            Telefon: [Telefonnummer]
-          </p>
-
-          {/* Registereintrag */}
-          <h2 className="text-xl font-semibold text-[#0A3D35] mt-10 mb-3">
-            Registereintrag
-          </h2>
-          <p className="text-[#3A4A44] leading-relaxed">
-            Handelsregister: [Amtsgericht]
-            <br />
-            Registernummer: HRB [Nummer]
-            <br />
-            <span className="text-[#6B7D77] italic">
-              (wird nach Gr&uuml;ndung erg&auml;nzt)
-            </span>
           </p>
 
           {/* Umsatzsteuer-ID */}
@@ -73,7 +50,7 @@ export default function Impressum() {
             Umsatzsteuergesetz:
             <br />
             <span className="text-[#6B7D77] italic">
-              Wird nach Gr&uuml;ndung erg&auml;nzt.
+              Wird bei Erteilung erg&auml;nzt.
             </span>
           </p>
 
@@ -82,11 +59,11 @@ export default function Impressum() {
             Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV
           </h2>
           <p className="text-[#3A4A44] leading-relaxed">
-            [Name]
+            Leon Marc Schuler
             <br />
-            [Stra&szlig;e und Hausnummer]
+            Kaiser-Friedrich-Promenade 114
             <br />
-            [PLZ] [Ort]
+            61352 Bad Homburg vor der H&ouml;he
           </p>
 
           {/* Haftungsausschluss */}

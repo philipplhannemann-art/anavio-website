@@ -107,7 +107,7 @@ export default function Solution() {
           {/* Time Savings */}
           <div className="border-t border-[#EDF2F2] bg-white px-8 py-6 text-center">
             <p className="text-xl font-bold text-[#0C8A72]">
-              Zeitersparnis: bis zu 10 Minuten pro Patient
+              Zeitersparnis: bis zu 15 Minuten pro Patient
             </p>
           </div>
         </div>

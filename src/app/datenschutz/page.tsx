@@ -22,11 +22,11 @@ export default function Datenschutz() {
             datenschutzrechtlicher Bestimmungen ist:
           </p>
           <p className="text-[#3A4A44] leading-relaxed mt-3">
-            anavio GmbH (i.Gr.)
+            Leon Marc Schuler
             <br />
-            [Stra&szlig;e und Hausnummer]
+            Kaiser-Friedrich-Promenade 114
             <br />
-            [PLZ] [Ort]
+            61352 Bad Homburg vor der H&ouml;he
             <br />
             Deutschland
             <br />
@@ -37,8 +37,6 @@ export default function Datenschutz() {
             >
               kontakt@anavio.de
             </a>
-            <br />
-            Telefon: [Telefonnummer]
           </p>
 
           {/* 2. Datenschutzbeauftragter */}
@@ -46,15 +44,17 @@ export default function Datenschutz() {
             2. Datenschutzbeauftragter
           </h2>
           <p className="text-[#3A4A44] leading-relaxed">
-            [Name des Datenschutzbeauftragten]
-            <br />
-            [Kontaktadresse des DSB]
-            <br />
-            E-Mail: [E-Mail-Adresse des DSB]
-          </p>
-          <p className="text-[#6B7D77] italic mt-2 text-sm">
-            Sofern kein Datenschutzbeauftragter bestellt werden muss, wenden Sie sich
-            bitte direkt an den Verantwortlichen.
+            Ein Datenschutzbeauftragter ist derzeit nicht bestellt, da die
+            gesetzlichen Voraussetzungen gem&auml;&szlig; &sect; 38 BDSG nicht
+            vorliegen. Bei Fragen zum Datenschutz wenden Sie sich bitte direkt an
+            den Verantwortlichen unter{" "}
+            <a
+              href="mailto:kontakt@anavio.de"
+              className="text-[#0C8A72] underline underline-offset-2"
+            >
+              kontakt@anavio.de
+            </a>
+            .
           </p>
 
           {/* 3. Erhebung und Verarbeitung */}
@@ -325,8 +325,8 @@ export default function Datenschutz() {
             11. Schweigepflicht (&sect; 203 StGB)
           </h2>
           <p className="text-[#3A4A44] leading-relaxed">
-            S&auml;mtliche Mitarbeiterinnen und Mitarbeiter der anavio GmbH (i.Gr.),
-            die Zugang zu personenbezogenen Daten &mdash; insbesondere
+            Alle Personen, die im Rahmen von anavio (Leon Marc Schuler)
+            Zugang zu personenbezogenen Daten &mdash; insbesondere
             Gesundheitsdaten &mdash; haben, sind auf die Vertraulichkeit
             verpflichtet und unterliegen der Schweigepflicht gem&auml;&szlig; &sect;
             203 StGB. Dies umfasst auch externe Dienstleister, die im Rahmen der
@@ -349,11 +349,15 @@ export default function Datenschutz() {
             Die f&uuml;r uns zust&auml;ndige Aufsichtsbeh&ouml;rde ist:
           </p>
           <p className="text-[#3A4A44] leading-relaxed mt-2">
-            [Zust&auml;ndige Landesdatenschutzbeh&ouml;rde]
+            Der Hessische Beauftragte f&uuml;r Datenschutz und Informationsfreiheit
             <br />
-            [Adresse der Datenschutzbeh&ouml;rde]
+            Gustav-Stresemann-Ring 1
             <br />
-            [Kontaktdaten der Datenschutzbeh&ouml;rde]
+            65189 Wiesbaden
+            <br />
+            Telefon: +49 611 1408-0
+            <br />
+            E-Mail: poststelle@datenschutz.hessen.de
           </p>
 
           {/* 13. Aenderungen */}

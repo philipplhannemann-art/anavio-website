@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "anavio – Digitale Anamnese für die Primärversorgung",
   description:
-    "Bessere Anamnese. Mehr Zeit für Patienten. Die digitale Vorab-Anamnese für Haus- und Zahnärzte. Bis zu 10 Minuten Zeitersparnis pro Patient.",
+    "Bessere Anamnese. Mehr Zeit für Patienten. Die digitale Vorab-Anamnese für Haus- und Zahnärzte. Bis zu 15 Minuten Zeitersparnis pro Patient.",
   keywords: [
     "digitale Anamnese",
     "Arztpraxis",

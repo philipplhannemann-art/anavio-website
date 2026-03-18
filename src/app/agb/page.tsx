@@ -11,7 +11,7 @@ export default function AGB() {
             Allgemeine Gesch&auml;ftsbedingungen
           </h1>
           <p className="text-[#6B7D77] text-lg mb-1">
-            der anavio GmbH (i.Gr.) f&uuml;r die Nutzung der digitalen
+            von Leon Marc Schuler (anavio) f&uuml;r die Nutzung der digitalen
             Anamnese-Plattform
           </p>
           <p className="text-[#6B7D77] text-lg mb-12">Stand: M&auml;rz 2026</p>
@@ -23,7 +23,7 @@ export default function AGB() {
           <p className="text-[#3A4A44] leading-relaxed">
             (1) Diese Allgemeinen Gesch&auml;ftsbedingungen (nachfolgend
             &bdquo;AGB&ldquo;) gelten f&uuml;r s&auml;mtliche
-            Vertragsbeziehungen zwischen der anavio GmbH (i.Gr.), [Adresse]
+            Vertragsbeziehungen zwischen Leon Marc Schuler, Kaiser-Friedrich-Promenade 114, 61352 Bad Homburg vor der H&ouml;he
             (nachfolgend &bdquo;anavio&ldquo; oder &bdquo;Anbieter&ldquo;), und
             den Nutzern der digitalen Anamnese-Plattform (nachfolgend
             &bdquo;Nutzer&ldquo; oder &bdquo;Kunde&ldquo;).
@@ -233,7 +233,7 @@ export default function AGB() {
           </p>
           <p className="text-[#3A4A44] leading-relaxed mt-3">
             (2) Bei unbefristeten Vertr&auml;gen kann der Vertrag von beiden Seiten
-            mit einer Frist von [K&uuml;ndigungsfrist, z.B. 3 Monaten] zum Ende
+            mit einer Frist von 3 Monaten zum Ende
             eines Kalendermonats gek&uuml;ndigt werden.
           </p>
           <p className="text-[#3A4A44] leading-relaxed mt-3">
@@ -269,7 +269,7 @@ export default function AGB() {
           </p>
           <p className="text-[#3A4A44] leading-relaxed mt-3">
             (2) Gerichtsstand f&uuml;r alle Streitigkeiten aus oder im
-            Zusammenhang mit diesem Vertrag ist [Gerichtsstand / Ort], sofern der
+            Zusammenhang mit diesem Vertrag ist Bad Homburg vor der H&ouml;he, sofern der
             Nutzer Kaufmann, juristische Person des &ouml;ffentlichen Rechts oder
             &ouml;ffentlich-rechtliches Sonderverm&ouml;gen ist.
           </p>
@@ -288,7 +288,7 @@ export default function AGB() {
             Schriftformerfordernisses. anavio ist berechtigt, diese AGB mit
             angemessener Frist zu &auml;ndern. Der Nutzer wird &uuml;ber
             &Auml;nderungen rechtzeitig informiert. Widerspricht der Nutzer den
-            ge&auml;nderten AGB nicht innerhalb von [Frist, z.B. 4 Wochen] nach
+            ge&auml;nderten AGB nicht innerhalb von 4 Wochen nach
             Zugang der &Auml;nderungsmitteilung, gelten die ge&auml;nderten AGB
             als angenommen.
           </p>
