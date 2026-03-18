@@ -176,16 +176,21 @@ export default function Problem() {
               </div>
             </div>
 
-            {/* Savings callout */}
+            {/* Savings callout — offset to show the delta */}
             <div className="mt-5 sm:mt-6 flex items-center gap-2 sm:gap-4">
               <div className="w-20 sm:w-32 md:w-44 shrink-0 text-right">
                 <span className="text-xs sm:text-sm font-bold text-[#0C8A72]">Ersparnis</span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="h-10 sm:h-12 rounded-lg bg-[#E6F5F0] border-2 border-dashed border-[#0C8A72]/30 flex items-center px-3 sm:px-4">
-                  <span className="text-sm sm:text-lg font-bold text-[#0C8A72] whitespace-nowrap">
-                    Bis zu 15 Min / Patient
-                  </span>
+                <div className="h-10 sm:h-12 rounded-lg overflow-hidden flex">
+                  {/* Transparent offset matching the "Mit anavio" bar width */}
+                  <div className="h-full flex-shrink-0" style={{ width: "55%" }} />
+                  {/* Delta bar from where green ends to where red ends */}
+                  <div className="h-full flex-1 rounded-r-lg bg-[#E6F5F0] border-2 border-dashed border-[#0C8A72]/30 flex items-center justify-center px-2 sm:px-4">
+                    <span className="text-xs sm:text-lg font-bold text-[#0C8A72] whitespace-nowrap">
+                      Bis zu 15 Min
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
