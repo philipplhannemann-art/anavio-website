@@ -56,36 +56,21 @@ export default function Security() {
             </ul>
           </div>
 
-          {/* Right – Regulatorische Strategie */}
+          {/* Right – Ihre Daten, Ihre Kontrolle */}
           <div className="rounded-2xl border border-[#EDF2F2] bg-white p-8">
             <h3 className="mb-6 text-lg font-bold text-[#0A3D35]">
-              Regulatorische Strategie
+              Ihre Daten, Ihre Kontrolle
             </h3>
             <ul className="space-y-4">
               {[
-                {
-                  text: 'MVP: Kein Medizinprodukt (reine Datenerfassung)',
-                  accent: '#0C8A72',
-                },
-                {
-                  text: '§ 203 StGB: Schweigepflicht-Compliance',
-                  accent: '#0C8A72',
-                },
-                {
-                  text: 'Formulierungen: "Information", nie "Diagnose"',
-                  accent: '#0C8A72',
-                },
-                {
-                  text: 'Mittelfristig: CE-Klasse I (Dringlichkeitsbewertung)',
-                  accent: '#F5A623',
-                },
-                {
-                  text: 'Langfristig: DiGA-Listung (§ 33a SGB V)',
-                  accent: '#2C5F7C',
-                },
+                "Keine Patientendaten auf Endger\u00e4ten gespeichert",
+                "Automatische L\u00f6schung nach \u00dcbertragung ans PVS",
+                "Kein Zugriff durch Dritte \u2014 auch nicht durch anavio",
+                "\u00a7 203 StGB: Schweigepflicht vollst\u00e4ndig gew\u00e4hrleistet",
+                "Volle Kontrolle durch die Praxis \u2014 jederzeit k\u00fcndbar",
+                "Keine Weitergabe an Dritte, keine Werbung",
               ].map((item) => (
-                <li key={item.text} className="flex items-start gap-3">
-                  {/* Shield / milestone icon */}
+                <li key={item} className="flex items-start gap-3">
                   <svg
                     className="mt-0.5 h-5 w-5 flex-shrink-0"
                     viewBox="0 0 20 20"
@@ -93,21 +78,21 @@ export default function Security() {
                   >
                     <path
                       d="M10 2L4 5V10C4 14 7 17.5 10 18.5C13 17.5 16 14 16 10V5L10 2Z"
-                      fill={`${item.accent}15`}
-                      stroke={item.accent}
+                      fill="#E6F5F015"
+                      stroke="#0C8A72"
                       strokeWidth="1.5"
                       strokeLinejoin="round"
                     />
                     <path
                       d="M7.5 10L9.5 12L13 8"
-                      stroke={item.accent}
+                      stroke="#0C8A72"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                   </svg>
                   <span className="text-sm leading-relaxed text-[#6B7D77]">
-                    {item.text}
+                    {item}
                   </span>
                 </li>
               ))}
