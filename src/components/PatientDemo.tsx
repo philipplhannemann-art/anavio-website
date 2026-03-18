@@ -254,7 +254,7 @@ export default function PatientDemo() {
                     </svg>
                     <p className="text-xs text-[#0A3D35] leading-relaxed">
                       <span className="font-semibold">Hinweis:</span> Häufige Analgetika-Einnahme (&gt;10 Tage/Monat) —
-                      Medikamentenübergebrauchskopfschmerz differentialdiagnostisch zu erwägen
+                      Medikamenten&shy;übergebrauchs&shy;kopfschmerz differentialdiagnostisch zu erwägen
                     </p>
                   </div>
                 </div>
@@ -286,12 +286,12 @@ export default function PatientDemo() {
                     <p className="text-[10px] font-bold tracking-widest uppercase text-[#6B7D77] mb-2">
                       Weitere zu erwägende Muster
                     </p>
-                    <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center gap-2 text-sm text-[#F5A623]">
-                        <span className="w-2 h-2 rounded-full bg-[#F5A623]" />
-                        Medikamentenübergebrauchskopfschmerz
+                    <div className="flex items-start justify-between gap-2">
+                      <span className="inline-flex items-start gap-2 text-sm text-[#F5A623] min-w-0 break-words">
+                        <span className="w-2 h-2 rounded-full bg-[#F5A623] shrink-0 mt-1.5" />
+                        Medikamenten&shy;übergebrauchs&shy;kopfschmerz
                       </span>
-                      <span className="text-xs text-[#6B7D77] font-mono">G44.4</span>
+                      <span className="text-xs text-[#6B7D77] font-mono shrink-0">G44.4</span>
                     </div>
                     <div className="flex items-center justify-between mt-1.5">
                       <span className="inline-flex items-center gap-2 text-sm text-[#6B7D77]">
