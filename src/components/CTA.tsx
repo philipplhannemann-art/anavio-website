@@ -10,19 +10,21 @@ export function CTA() {
     setStatus("sending");
 
     const form = e.currentTarget;
-    const data = {
-      name: (form.elements.namedItem("cta-name") as HTMLInputElement).value,
-      email: (form.elements.namedItem("cta-email") as HTMLInputElement).value,
-      praxis: (form.elements.namedItem("cta-praxis") as HTMLInputElement).value,
-      fachrichtung: (form.elements.namedItem("cta-fach") as HTMLSelectElement).value,
-      nachricht: (form.elements.namedItem("cta-message") as HTMLTextAreaElement).value,
-    };
+    const formData = new FormData(form);
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formsubmit.co/ajax/philippluca@hotmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          Name: formData.get("name"),
+          "E-Mail": formData.get("email"),
+          Praxisname: formData.get("praxis"),
+          Fachrichtung: formData.get("fachrichtung"),
+          Nachricht: formData.get("nachricht") || "–",
+          _subject: "Neue Demo-Anfrage über anavio.de",
+          _template: "table",
+        }),
       });
 
       if (res.ok) {
@@ -82,6 +84,7 @@ export function CTA() {
                 </label>
                 <input
                   id="cta-name"
+                  name="name"
                   type="text"
                   required
                   placeholder="Dr. Max Mustermann"
@@ -99,6 +102,7 @@ export function CTA() {
                 </label>
                 <input
                   id="cta-email"
+                  name="email"
                   type="email"
                   required
                   placeholder="arzt@praxis.de"
@@ -116,6 +120,7 @@ export function CTA() {
                 </label>
                 <input
                   id="cta-praxis"
+                  name="praxis"
                   type="text"
                   placeholder="Hausarztpraxis am Marktplatz"
                   className="w-full rounded-lg border border-[#EDF2F2] p-4 text-[#0A3D35] placeholder-[#B8C8C4] transition-colors focus:border-[#0C8A72] focus:ring-2 focus:ring-[#0C8A72]/20 focus:outline-none"
@@ -132,6 +137,7 @@ export function CTA() {
                 </label>
                 <select
                   id="cta-fach"
+                  name="fachrichtung"
                   defaultValue=""
                   className="w-full rounded-lg border border-[#EDF2F2] p-4 text-[#0A3D35] transition-colors focus:border-[#0C8A72] focus:ring-2 focus:ring-[#0C8A72]/20 focus:outline-none"
                 >
@@ -158,6 +164,7 @@ export function CTA() {
                 </label>
                 <textarea
                   id="cta-message"
+                  name="nachricht"
                   rows={4}
                   placeholder="Ihre Nachricht an uns..."
                   className="w-full resize-none rounded-lg border border-[#EDF2F2] p-4 text-[#0A3D35] placeholder-[#B8C8C4] transition-colors focus:border-[#0C8A72] focus:ring-2 focus:ring-[#0C8A72]/20 focus:outline-none"
