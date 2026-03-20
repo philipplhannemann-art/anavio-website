@@ -8,19 +8,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "anavio – Digitale Anamnese für die Primärversorgung",
+  title: "anavio \u2013 Digitale Anamnese f\u00fcr Ihre Praxis",
   description:
-    "Bessere Anamnese. Mehr Zeit für Patienten. Die digitale Vorab-Anamnese für Haus- und Zahnärzte. Bis zu 15 Minuten Zeitersparnis pro Patient.",
+    "Bessere Anamnese. Mehr Zeit f\u00fcr Patienten. Die digitale Anamnese f\u00fcr Arztpraxen. Bis zu 15 Minuten Zeitersparnis pro Patient. 20+ Sprachen.",
   keywords: [
     "digitale Anamnese",
     "Arztpraxis",
     "Praxissoftware",
     "Vorab-Anamnese",
     "Hausarzt",
+    "Facharzt",
     "Zahnarzt",
     "DSGVO",
     "Patientenfragebogen",
+    "mehrsprachig",
+    "Dokumentation",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
