@@ -1,8 +1,10 @@
 import Image from "next/image";
 
 const productLinks = [
+  { label: "Live-Beispiel", href: "/#patientendemo" },
   { label: "Funktionen", href: "/#funktionen" },
-  { label: "Für Ärzte", href: "/fuer-aerzte" },
+  { label: "F\u00fcr \u00c4rzte", href: "/fuer-aerzte" },
+  { label: "Dokumentation", href: "/dokumentation" },
   { label: "Sicherheit", href: "/#sicherheit" },
 ];
 

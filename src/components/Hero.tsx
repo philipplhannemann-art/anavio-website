@@ -24,9 +24,9 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="animate-fade-in-up delay-200 mt-6 text-base sm:text-xl leading-relaxed text-[#6B7D77] max-w-2xl mx-auto">
-            Die digitale Vorab-Anamnese f&uuml;r Haus- und Zahn&auml;rzte.
-            Patienten erfassen ihre Symptome strukturiert vor dem Termin
-            &ndash; Sie starten vorbereitet.
+            Die digitale Anamnese f&uuml;r Ihre Praxis.
+            Patienten erfassen ihre Symptome strukturiert &ndash; vorab von
+            zu Hause oder vor Ort in der Praxis. Sie starten vorbereitet.
           </p>
 
           {/* Buttons */}
@@ -66,6 +66,10 @@ export default function Hero() {
               </span>
               <span className="mt-1 text-sm text-[#6B7D77]">Hosting in Deutschland</span>
             </div>
+            <div className="flex flex-col items-center">
+              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">20+</span>
+              <span className="mt-1 text-sm text-[#6B7D77]">Sprachen verf&uuml;gbar</span>
+            </div>
           </div>
         </div>
 
@@ -82,7 +86,7 @@ export default function Hero() {
                 </svg>
               </span>
               <span className="text-sm font-semibold text-[#0A3D35]">Patienten-Gespr&auml;ch</span>
-              <span className="ml-auto text-xs text-[#6B7D77] bg-[#F7FAFA] px-2.5 py-1 rounded-full">Hans K., 58 J.</span>
+              <span className="ml-auto text-xs text-[#6B7D77] bg-[#F7FAFA] px-2.5 py-1 rounded-full">Thomas M., 52 J.</span>
             </div>
             <div className="h-px bg-[#EDF2F2] mb-4" />
 
@@ -90,33 +94,33 @@ export default function Hero() {
             <div className="space-y-3">
               <div className="flex justify-end">
                 <div className="max-w-[85%] bg-[#0C8A72] text-white text-xs leading-relaxed px-3.5 py-2.5 rounded-2xl rounded-br-sm">
-                  Ich habe seit gestern Abend so ein Druckgef&uuml;hl auf der Brust und kriege schlecht Luft, besonders beim Treppensteigen.
+                  Ich habe seit ungef&auml;hr zwei Wochen Schmerzen im unteren R&uuml;cken, vor allem morgens beim Aufstehen.
                 </div>
               </div>
               <div className="flex justify-start">
                 <div className="max-w-[85%]">
                   <span className="text-[9px] font-semibold text-[#0C8A72] uppercase tracking-wide ml-1 mb-1 block">anavio</span>
                   <div className="bg-[#F7FAFA] text-[#0A3D35] text-xs leading-relaxed px-3.5 py-2.5 rounded-2xl rounded-bl-sm">
-                    Das nehme ich ernst. Strahlt das Druckgef&uuml;hl irgendwohin aus &mdash; zum Beispiel in den Arm, den Kiefer oder den R&uuml;cken?
+                    Strahlen die Schmerzen irgendwohin aus &mdash; zum Beispiel ins Bein, ins Ges&auml;&szlig; oder in die Leiste?
                   </div>
                 </div>
               </div>
               <div className="flex justify-end">
                 <div className="max-w-[85%] bg-[#0C8A72] text-white text-xs leading-relaxed px-3.5 py-2.5 rounded-2xl rounded-br-sm">
-                  Ja, manchmal in den linken Arm. Und mein linkes Bein ist seit der Flugreise letzte Woche auch geschwollen und warm.
+                  Ja, manchmal zieht es ins linke Bein bis zum Knie. Vor allem wenn ich lange sitze.
                 </div>
               </div>
               <div className="flex justify-start">
                 <div className="max-w-[85%]">
                   <span className="text-[9px] font-semibold text-[#0C8A72] uppercase tracking-wide ml-1 mb-1 block">anavio</span>
                   <div className="bg-[#F7FAFA] text-[#0A3D35] text-xs leading-relaxed px-3.5 py-2.5 rounded-2xl rounded-bl-sm">
-                    Verstanden. Haben Sie Vorerkrankungen wie Bluthochdruck, Diabetes oder Herzprobleme? Nehmen Sie regelm&auml;&szlig;ig Medikamente?
+                    Haben Sie Taubheitsgef&uuml;hle, Kribbeln im Bein oder Schwierigkeiten beim Wasserlassen bemerkt?
                   </div>
                 </div>
               </div>
               <div className="flex justify-end">
                 <div className="max-w-[85%] bg-[#0C8A72] text-white text-xs leading-relaxed px-3.5 py-2.5 rounded-2xl rounded-br-sm">
-                  Diabetes Typ 2 und Bluthochdruck. Ich nehme Metformin und Ramipril. Rauche auch seit 30 Jahren.
+                  Nein, nichts davon. Ich sitze beruflich bestimmt 8&ndash;9 Stunden am Tag am Schreibtisch.
                 </div>
               </div>
             </div>
@@ -153,30 +157,23 @@ export default function Hero() {
             <div className="mb-3.5">
               <span className="text-[9px] font-bold tracking-widest uppercase text-[#0C8A72]">Medizinische Zusammenfassung</span>
               <p className="mt-1.5 text-[11px] text-[#0A3D35] leading-relaxed">
-                58-j. Patient, <span className="font-semibold">retrosternales Druckgef&uuml;hl</span> seit gestern Abend mit Ausstrahlung in den li. Arm,
-                <span className="font-semibold"> Belastungsdyspnoe</span> beim Treppensteigen. Zusätzlich einseitige Beinschwellung li. (warm) nach Langstreckenflug vor 7 Tagen.
-                VE: DM Typ 2, art. Hypertonie. Nikotinabusus ca. 30 py.
+                52-j. Patient, <span className="font-semibold">lumbale R&uuml;ckenschmerzen</span> seit 2 Wochen,
+                morgendliche Betonung mit Besserung im Tagesverlauf. Pseudoradikul&auml;re{" "}
+                <span className="font-semibold">Ausstrahlung li. Bein</span> bis Knie, belastungsabh&auml;ngig.
+                Sitzende T&auml;tigkeit (8&ndash;9h/Tag). Keine neurol. Defizite.
               </p>
             </div>
 
-            {/* Red Flags */}
+            {/* Red Flags — keine */}
             <div className="mb-3.5">
-              <span className="text-[9px] font-bold tracking-widest uppercase text-[#E84C3D]">Red Flags &mdash; Bitte klinisch priorisieren</span>
-              <div className="mt-1.5 space-y-1.5">
-                <div className="flex items-start gap-2 bg-[#FEF2F0] border border-[#E84C3D]/20 rounded-lg px-3 py-2">
-                  <svg className="w-3.5 h-3.5 text-[#E84C3D] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <span className="text-[9px] font-bold tracking-widest uppercase text-[#27AE60]">Red Flags</span>
+              <div className="mt-1.5">
+                <div className="flex items-center gap-2 bg-[#E6F5F0] border border-[#27AE60]/20 rounded-lg px-3 py-2">
+                  <svg className="w-3.5 h-3.5 text-[#27AE60] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
-                  <p className="text-[10px] text-[#0A3D35] leading-relaxed">
-                    <span className="font-semibold">Thoraxschmerz mit Ausstrahlung</span> &mdash; akutes koronares Geschehen nicht ausschlie&szlig;bar
-                  </p>
-                </div>
-                <div className="flex items-start gap-2 bg-[#FEF2F0] border border-[#E84C3D]/20 rounded-lg px-3 py-2">
-                  <svg className="w-3.5 h-3.5 text-[#E84C3D] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <p className="text-[10px] text-[#0A3D35] leading-relaxed">
-                    <span className="font-semibold">Einseitige Beinschwellung + Dyspnoe</span> &mdash; thromboembolisches Ereignis zu erw&auml;gen (Wells-Score erh&ouml;ht)
+                  <p className="text-[10px] text-[#0A3D35]">
+                    <span className="font-semibold">Keine Red Flags identifiziert</span> &mdash; keine Cauda-equina-Symptomatik, kein Fieber, kein Gewichtsverlust
                   </p>
                 </div>
               </div>
@@ -188,58 +185,49 @@ export default function Hero() {
               <div className="mt-1.5 space-y-1">
                 <div className="flex items-center justify-between text-[11px]">
                   <span className="flex items-center gap-1.5 font-medium text-[#0A3D35]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#E84C3D]" />
-                    Akutes Koronarsyndrom
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#0C8A72]" />
+                    Lumbales Schmerzsyndrom
                   </span>
-                  <span className="text-[10px] text-[#6B7D77] font-mono">I21.9</span>
+                  <span className="text-[10px] text-[#6B7D77] font-mono">M54.5</span>
                 </div>
                 <div className="flex items-center justify-between text-[11px]">
                   <span className="flex items-center gap-1.5 font-medium text-[#0A3D35]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#E84C3D]" />
-                    Lungenarterienembolie
-                  </span>
-                  <span className="text-[10px] text-[#6B7D77] font-mono">I26.9</span>
-                </div>
-                <div className="flex items-center justify-between text-[11px]">
-                  <span className="flex items-center gap-1.5 font-medium text-[#F5A623]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
-                    Tiefe Beinvenenthrombose
+                    Lumboischialgie
                   </span>
-                  <span className="text-[10px] text-[#6B7D77] font-mono">I80.2</span>
+                  <span className="text-[10px] text-[#6B7D77] font-mono">M54.4</span>
                 </div>
                 <div className="flex items-center justify-between text-[11px]">
                   <span className="flex items-center gap-1.5 text-[#6B7D77]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#6B7D77]" />
-                    Instabile Angina pectoris
+                    Bandscheibenprotrusion
                   </span>
-                  <span className="text-[10px] text-[#6B7D77] font-mono">I20.0</span>
+                  <span className="text-[10px] text-[#6B7D77] font-mono">M51.1</span>
                 </div>
               </div>
             </div>
 
-            {/* Risikoprofil */}
+            {/* Risikofaktoren */}
             <div className="mb-3.5">
-              <span className="text-[9px] font-bold tracking-widest uppercase text-[#0C8A72]">Kardiovaskul&auml;res Risikoprofil</span>
+              <span className="text-[9px] font-bold tracking-widest uppercase text-[#0C8A72]">Risikofaktoren</span>
               <div className="mt-1.5 flex flex-wrap gap-1.5">
-                {["DM Typ 2", "Art. Hypertonie", "Nikotinabusus 30 py", "Männlich >55 J.", "Immobilisation (Flug)"].map((r) => (
-                  <span key={r} className="inline-block text-[9px] font-medium text-[#E84C3D] border border-[#E84C3D]/20 bg-[#FEF2F0] rounded-full px-2 py-0.5">
+                {["Sitzende T\u00e4tigkeit", "Bewegungsmangel", "Alter >50"].map((r) => (
+                  <span key={r} className="inline-block text-[9px] font-medium text-[#F5A623] border border-[#F5A623]/20 bg-[#FEF9F0] rounded-full px-2 py-0.5">
                     {r}
                   </span>
                 ))}
               </div>
             </div>
 
-            {/* Leitlinienrelevante Diagnostik */}
+            {/* Diagnostik */}
             <div className="mb-3">
-              <span className="text-[9px] font-bold tracking-widest uppercase text-[#0C8A72]">Gem&auml;&szlig; Leitlinie zu erw&auml;gende Diagnostik</span>
+              <span className="text-[9px] font-bold tracking-widest uppercase text-[#0C8A72]">Zu erw&auml;gende Diagnostik</span>
               <div className="mt-1.5 grid grid-cols-2 gap-1">
                 {[
-                  "12-Kanal-EKG",
-                  "Troponin T/I (hs)",
-                  "D-Dimere",
-                  "Kompressionssonographie",
-                  "CT-Angiographie Thorax",
-                  "BNP / NT-proBNP",
+                  "Las\u00e8gue-Test",
+                  "Neurol. Basisuntersuchung",
+                  "Beinl\u00e4ngen-/Beckenstand",
+                  "ggf. R\u00f6ntgen LWS",
                 ].map((d) => (
                   <span key={d} className="flex items-center gap-1.5 text-[10px] text-[#0A3D35]">
                     <svg className="w-3 h-3 text-[#0C8A72] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -264,11 +252,11 @@ export default function Hero() {
         <div className="animate-fade-in-up delay-500 mt-6 flex items-center justify-center gap-2 sm:gap-4 flex-wrap">
           <span className="rounded-full bg-white border border-[#EDF2F2] px-3.5 py-1.5 text-[11px] font-medium text-[#0A3D35] shadow-sm">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#0C8A72] mr-1.5 align-middle" />
-            3 abgeschlossen
+            4 abgeschlossen
           </span>
-          <span className="rounded-full bg-white border border-[#EDF2F2] px-3.5 py-1.5 text-[11px] font-medium text-amber-600 shadow-sm">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-500 mr-1.5 align-middle" />
-            1 auff&auml;llig
+          <span className="rounded-full bg-white border border-[#EDF2F2] px-3.5 py-1.5 text-[11px] font-medium text-[#0C8A72] shadow-sm">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#0C8A72] mr-1.5 align-middle animate-pulse" />
+            1 aktuell
           </span>
           <span className="rounded-full bg-white border border-[#EDF2F2] px-3.5 py-1.5 text-[11px] font-medium text-[#6B7D77] shadow-sm">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#6B7D77] mr-1.5 align-middle" />

@@ -1,34 +1,40 @@
 export default function Problem() {
-  const stats = [
+  const allStats = [
     {
-      value: "7\u201310 Min",
+      value: "7,6 Min",
       color: "#E84C3D",
-      description: "pro Patient werden mit Standardfragen verbracht",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
+      description: "durchschnittliche Konsultationsdauer in der Hausarztpraxis",
+      source: "1",
     },
     {
-      value: "62%",
+      value: "80%",
       color: "#F5A623",
-      description: "der Patienten vergessen relevante Symptome zu nennen",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-        </svg>
-      ),
+      description: "der Patienten verschweigen mindestens einmal relevante Symptome",
+      source: "2",
     },
     {
-      value: "30%",
-      color: "#0C8A72",
-      description: "Fehlzuweisungen k\u00f6nnten vermieden werden",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-        </svg>
-      ),
+      value: "90%",
+      color: "#2C5F7C",
+      description: "der Dokumentationen enthalten klinisch relevante Fehler",
+      source: "3",
+    },
+    {
+      value: "~60%",
+      color: "#E84C3D",
+      description: "der Patienten haben das Gef\u00fchl, der Arzt eilt durch die Untersuchung",
+      source: "4",
+    },
+    {
+      value: "~50%",
+      color: "#F5A623",
+      description: "der \u00e4rztlichen Arbeitszeit f\u00fcr Dokumentation statt Patientenkontakt",
+      source: "5",
+    },
+    {
+      value: "49%",
+      color: "#2C5F7C",
+      description: "der \u00c4rzte in Deutschland f\u00fchlen sich h\u00e4ufig \u00fcberlastet",
+      source: "6",
     },
   ];
 
@@ -55,30 +61,31 @@ export default function Problem() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-[#6B7D77]">
             Der aktuelle Prozess in deutschen Arztpraxen ist manuell,
-            fehleranf&auml;llig und ineffizient.
+            fehleranf&auml;llig und ineffizient &ndash; die Datenlage ist eindeutig.
           </p>
         </div>
 
-        {/* Stat Cards */}
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {stats.map((stat) => (
+        {/* Stat Cards — uniform 3x2 grid */}
+        <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {allStats.map((stat) => (
             <div
               key={stat.value}
-              className="rounded-2xl border border-[#EDF2F2] bg-white p-6 sm:p-8 shadow-sm transition-shadow hover:shadow-md"
+              className="rounded-2xl border border-[#EDF2F2] bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
               <div
-                className="inline-flex items-center justify-center w-12 h-12 rounded-xl mb-5"
-                style={{ backgroundColor: `${stat.color}10`, color: stat.color }}
-              >
-                {stat.icon}
-              </div>
+                className="inline-block w-1 h-8 rounded-full mb-4"
+                style={{ backgroundColor: stat.color }}
+              />
               <p
-                className="text-3xl sm:text-4xl font-bold"
+                className="text-3xl font-bold"
                 style={{ color: stat.color }}
               >
                 {stat.value}
               </p>
-              <p className="mt-3 text-[#6B7D77]">{stat.description}</p>
+              <p className="mt-2 text-sm text-[#6B7D77] leading-relaxed">
+                {stat.description}
+                <sup className="text-[9px] text-[#6B7D77]/60 ml-0.5">{stat.source}</sup>
+              </p>
             </div>
           ))}
         </div>

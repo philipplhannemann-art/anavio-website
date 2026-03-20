@@ -8,15 +8,15 @@ export default function Solution() {
     },
     {
       number: 2,
-      title: "anavio-Link",
+      title: "anavio-Link oder Tablet",
       description:
-        "Automatischer Link per SMS/E-Mail zur Vorab-Anamnese.",
+        "Geplanter Termin? Automatischer Link per SMS/E-Mail. Akutbesuch? QR-Code oder Tablet direkt im Wartezimmer.",
     },
     {
       number: 3,
       title: "Digitale Anamnese",
       description:
-        "Adaptiver Fragebogen: intelligente Nachfragen basierend auf Antworten.",
+        "Adaptiver Fragebogen \u2014 von zu Hause vor dem Termin oder vor Ort in der Praxis. Intelligente Nachfragen basierend auf Antworten.",
     },
     {
       number: 4,
@@ -44,8 +44,8 @@ export default function Solution() {
             Mit anavio starten Sie vorbereitet
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-[#6B7D77]">
-            Patienten erfassen ihre Symptome digital &ndash; der Arzt beginnt
-            direkt mit gezielter Untersuchung.
+            Patienten erfassen ihre Symptome digital &ndash; vorab von zu Hause
+            oder vor Ort in der Praxis. Der Arzt beginnt direkt mit gezielter Untersuchung.
           </p>
         </div>
 

@@ -5,8 +5,10 @@ import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 
 const navLinks = [
+  { label: "Live-Beispiel", href: "/#patientendemo" },
   { label: "Funktionen", href: "/#funktionen" },
-  { label: "Für Ärzte", href: "/fuer-aerzte" },
+  { label: "F\u00fcr \u00c4rzte", href: "/fuer-aerzte" },
+  { label: "Dokumentation", href: "/dokumentation" },
   { label: "Sicherheit", href: "/#sicherheit" },
 ];
 
