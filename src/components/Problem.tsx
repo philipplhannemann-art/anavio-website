@@ -2,39 +2,69 @@ export default function Problem() {
   const allStats = [
     {
       value: "7,6 Min",
-      color: "#E84C3D",
+      color: "#0A3D35",
       description: "durchschnittliche Konsultationsdauer in der Hausarztpraxis",
       source: "1",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
     },
     {
       value: "80%",
-      color: "#F5A623",
+      color: "#0A3D35",
       description: "der Patienten verschweigen mindestens einmal relevante Symptome",
       source: "2",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+        </svg>
+      ),
     },
     {
       value: "90%",
-      color: "#2C5F7C",
+      color: "#0A3D35",
       description: "der Dokumentationen enthalten klinisch relevante Fehler",
       source: "3",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m6.75 12H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+        </svg>
+      ),
     },
     {
       value: "~60%",
-      color: "#E84C3D",
+      color: "#0A3D35",
       description: "der Patienten haben das Gef\u00fchl, der Arzt eilt durch die Untersuchung",
       source: "4",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0" />
+        </svg>
+      ),
     },
     {
       value: "~50%",
-      color: "#F5A623",
+      color: "#0A3D35",
       description: "der \u00e4rztlichen Arbeitszeit f\u00fcr Dokumentation statt Patientenkontakt",
       source: "5",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+        </svg>
+      ),
     },
     {
       value: "49%",
-      color: "#2C5F7C",
+      color: "#0A3D35",
       description: "der \u00c4rzte in Deutschland f\u00fchlen sich h\u00e4ufig \u00fcberlastet",
       source: "6",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z" />
+        </svg>
+      ),
     },
   ];
 
@@ -72,17 +102,21 @@ export default function Problem() {
               key={stat.value}
               className="rounded-2xl border border-[#EDF2F2] bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
-              <div
-                className="inline-block w-1 h-8 rounded-full mb-4"
-                style={{ backgroundColor: stat.color }}
-              />
-              <p
-                className="text-3xl font-bold"
-                style={{ color: stat.color }}
-              >
-                {stat.value}
-              </p>
-              <p className="mt-2 text-sm text-[#6B7D77] leading-relaxed">
+              <div className="flex items-center gap-3 mb-3">
+                <div
+                  className="flex items-center justify-center w-10 h-10 rounded-xl shrink-0"
+                  style={{ backgroundColor: `${stat.color}12`, color: stat.color }}
+                >
+                  {stat.icon}
+                </div>
+                <p
+                  className="text-3xl font-bold"
+                  style={{ color: stat.color }}
+                >
+                  {stat.value}
+                </p>
+              </div>
+              <p className="text-sm text-[#6B7D77] leading-relaxed">
                 {stat.description}
                 <sup className="text-[9px] text-[#6B7D77]/60 ml-0.5">{stat.source}</sup>
               </p>
