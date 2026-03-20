@@ -48,8 +48,8 @@ export default function Hero() {
           {/* Stat Badges */}
           <div className="animate-fade-in-up delay-400 mt-10 sm:mt-14 flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-12">
             <div className="flex flex-col items-center">
-              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">15 Min</span>
-              <span className="mt-1 text-sm text-[#6B7D77]">Zeitersparnis pro Patient</span>
+              <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">6+ Std</span>
+              <span className="mt-1 text-sm text-[#6B7D77]">weniger Routine pro Arzt/Woche</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-2xl sm:text-3xl font-bold text-[#0C8A72]">100%</span>

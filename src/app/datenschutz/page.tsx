@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Datenschutzerkl\u00e4rung",
+  description:
+    "Datenschutzerkl\u00e4rung von anavio. DSGVO-konforme Verarbeitung von Gesundheitsdaten, Hosting in Deutschland, Verschl\u00fcsselung aller Daten.",
+  alternates: { canonical: "https://www.anavio.de/datenschutz" },
+};
 
 export default function Datenschutz() {
   return (

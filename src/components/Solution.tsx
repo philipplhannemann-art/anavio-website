@@ -74,10 +74,81 @@ export default function Solution() {
           </div>
         </div>
 
-        {/* Comparison Banner */}
-        <div className="mt-20 overflow-hidden rounded-2xl border border-[#EDF2F2] shadow-sm">
+        {/* Konservative Hochrechnung — ZUERST */}
+        <div className="mt-20 max-w-3xl mx-auto">
+          <h3 className="text-center text-xl sm:text-2xl font-bold text-[#0A3D35] mb-3">
+            Konservativ gerechnet &ndash; schon bei nur 90 Sekunden
+          </h3>
+          <p className="text-center text-[#6B7D77] mb-10 max-w-xl mx-auto">
+            Selbst wenn anavio Ihnen pro Patient nur 90 Sekunden Anamnese-Zeit spart, summiert sich das schnell:
+          </p>
+
+          <div className="rounded-2xl border border-[#EDF2F2] bg-white shadow-sm overflow-hidden">
+            <div className="p-6 sm:p-8 space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#F7FAFA] flex items-center justify-center shrink-0">
+                  <span className="text-sm font-bold text-[#6B7D77]">1</span>
+                </div>
+                <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-[#6B7D77]">Ersparnis pro Patient</span>
+                  <span className="text-lg font-bold text-[#0A3D35]">90 Sekunden</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#F7FAFA] flex items-center justify-center shrink-0">
+                  <span className="text-sm font-bold text-[#6B7D77]">&times;</span>
+                </div>
+                <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-[#6B7D77]">Patienten pro Tag</span>
+                  <span className="text-lg font-bold text-[#0A3D35]">50 Patienten</span>
+                </div>
+              </div>
+
+              <div className="h-px bg-[#EDF2F2]" />
+
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#E6F5F0] flex items-center justify-center shrink-0">
+                  <span className="text-sm font-bold text-[#0C8A72]">=</span>
+                </div>
+                <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-[#0A3D35] font-medium">Pro Tag</span>
+                  <span className="text-xl font-bold text-[#0C8A72]">1 Stunde 15 Min</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#E6F5F0] flex items-center justify-center shrink-0">
+                  <span className="text-sm font-bold text-[#0C8A72]">=</span>
+                </div>
+                <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-[#0A3D35] font-medium">Pro Woche</span>
+                  <span className="text-xl font-bold text-[#0C8A72]">6+ Stunden</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#0C8A72] flex items-center justify-center shrink-0">
+                  <span className="text-sm font-bold text-white">=</span>
+                </div>
+                <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                  <span className="text-[#0A3D35] font-semibold">Pro Jahr</span>
+                  <span className="text-2xl font-bold text-[#0C8A72]">&uuml;ber 300 Stunden</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#F7FAFA] border-t border-[#EDF2F2] px-6 sm:px-8 py-4 text-center">
+              <p className="text-sm text-[#6B7D77]">
+                Konservativ gerechnet mit nur 90 Sekunden &ndash; die tats&auml;chliche Ersparnis liegt deutlich h&ouml;her.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Comparison Banner — darunter als Untermauerung */}
+        <div className="mt-14 overflow-hidden rounded-2xl border border-[#EDF2F2] shadow-sm max-w-3xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            {/* Before */}
             <div className="bg-[#EDF2F2] p-8">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#6B7D77]">
                 VORHER
@@ -89,8 +160,6 @@ export default function Solution() {
                 unstrukturiert, fehleranf&auml;llig
               </p>
             </div>
-
-            {/* After */}
             <div className="bg-[#0C8A72] p-8">
               <p className="text-xs font-semibold uppercase tracking-widest text-white/70">
                 NACHHER
@@ -102,13 +171,6 @@ export default function Solution() {
                 strukturiert, leitlinienbasiert
               </p>
             </div>
-          </div>
-
-          {/* Time Savings */}
-          <div className="border-t border-[#EDF2F2] bg-white px-4 sm:px-8 py-5 sm:py-6 text-center">
-            <p className="text-base sm:text-xl font-bold text-[#0C8A72]">
-              Zeitersparnis: bis zu 15 Minuten pro Patient
-            </p>
           </div>
         </div>
       </div>

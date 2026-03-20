@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Automatische Dokumentation f\u00fcr Arztpraxen \u2013 ICD-10, EBM & Arztbrief",
+  description:
+    "Von der Anamnese zur fertigen Dokumentation in 30\u201390 Sekunden. Automatische ICD-10-Kodierung, EBM-Erkennung, Arztbrief-Generierung und PVS-Integration. Bis zu 7.000\u201315.000\u20ac Umsatzpotenzial durch vollst\u00e4ndige Kodierung.",
+  alternates: {
+    canonical: "https://www.anavio.de/dokumentation",
+  },
+  openGraph: {
+    title: "Automatische Dokumentation f\u00fcr Arztpraxen \u2013 anavio",
+    description:
+      "Dokumentation in 30\u201390 Sekunden statt 4\u20138 Minuten. ICD-10, EBM und Arztbrief automatisch.",
+    url: "https://www.anavio.de/dokumentation",
+  },
+};
 
 export default function Dokumentation() {
   return (
@@ -199,8 +215,80 @@ export default function Dokumentation() {
                 <p className="text-[11px] text-[#6B7D77] leading-relaxed">
                   <span className="font-semibold">* Rechnung:</span> Deutsche Haus&auml;rzte verbringen 2&ndash;3h/Tag mit Dokumentation bei 40&ndash;60 Patienten (ZiPP 2023/2024) = 3&ndash;4,5 Min/Patient.
                   Dazu kommen durchschnittlich 1,4h Nacharbeit nach Feierabend (Sinsky et al., Ann. Int. Med. 2016) sowie Kodierung und Arztbriefe.
-                  Gesamtaufwand: ca. 4&ndash;8 Min pro Patient.
                 </p>
+              </div>
+            </div>
+
+            {/* Konservative Hochrechnung Doku */}
+            <div className="mt-14 max-w-3xl mx-auto">
+              <h3 className="text-center text-xl sm:text-2xl font-bold text-[#0A3D35] mb-3">
+                Selbst bei nur 2 Minuten Ersparnis pro Patient
+              </h3>
+              <p className="text-center text-[#6B7D77] mb-10 max-w-xl mx-auto">
+                Wenn anavio Ihnen pro Patient nur 2 Minuten Dokumentationszeit spart &ndash; rechnen Sie selbst:
+              </p>
+
+              <div className="rounded-2xl border border-[#EDF2F2] bg-white shadow-sm overflow-hidden">
+                <div className="p-6 sm:p-8 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#F7FAFA] flex items-center justify-center shrink-0">
+                      <span className="text-sm font-bold text-[#6B7D77]">1</span>
+                    </div>
+                    <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                      <span className="text-[#6B7D77]">Doku-Ersparnis pro Patient</span>
+                      <span className="text-lg font-bold text-[#0A3D35]">2 Minuten</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#F7FAFA] flex items-center justify-center shrink-0">
+                      <span className="text-sm font-bold text-[#6B7D77]">&times;</span>
+                    </div>
+                    <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                      <span className="text-[#6B7D77]">Patienten pro Tag</span>
+                      <span className="text-lg font-bold text-[#0A3D35]">50 Patienten</span>
+                    </div>
+                  </div>
+
+                  <div className="h-px bg-[#EDF2F2]" />
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#E6F5F0] flex items-center justify-center shrink-0">
+                      <span className="text-sm font-bold text-[#0C8A72]">=</span>
+                    </div>
+                    <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                      <span className="text-[#0A3D35] font-medium">Pro Tag</span>
+                      <span className="text-xl font-bold text-[#0C8A72]">1 Stunde 40 Min</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#E6F5F0] flex items-center justify-center shrink-0">
+                      <span className="text-sm font-bold text-[#0C8A72]">=</span>
+                    </div>
+                    <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                      <span className="text-[#0A3D35] font-medium">Pro Woche</span>
+                      <span className="text-xl font-bold text-[#0C8A72]">8+ Stunden</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-[#0C8A72] flex items-center justify-center shrink-0">
+                      <span className="text-sm font-bold text-white">=</span>
+                    </div>
+                    <div className="flex-1 flex items-center justify-between flex-wrap gap-2">
+                      <span className="text-[#0A3D35] font-semibold">Pro Jahr</span>
+                      <span className="text-2xl font-bold text-[#0C8A72]">&uuml;ber 400 Stunden</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-[#F7FAFA] border-t border-[#EDF2F2] px-6 sm:px-8 py-4 text-center">
+                  <p className="text-sm text-[#6B7D77]">
+                    Das entspricht <span className="font-semibold text-[#0C8A72]">einem vollen Arbeitstag pro Woche</span> &ndash;
+                    der nicht mehr f&uuml;r Dokumentation draufgeht.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

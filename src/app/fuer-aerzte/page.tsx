@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Digitale Anamnese f\u00fcr \u00c4rzte \u2013 Dashboard, Red Flags & Zeitersparnis",
+  description:
+    "In 30 Sekunden den vollst\u00e4ndigen Patienten\u00fcberblick. Strukturierte Anamnese mit Red-Flag-Erkennung, Differentialdiagnostik und Leitlinien-Hinweisen. F\u00fcr Haus\u00e4rzte, Fach\u00e4rzte und Zahn\u00e4rzte.",
+  alternates: {
+    canonical: "https://www.anavio.de/fuer-aerzte",
+  },
+  openGraph: {
+    title: "Digitale Anamnese f\u00fcr \u00c4rzte \u2013 anavio",
+    description:
+      "In 30 Sekunden den vollst\u00e4ndigen Patienten\u00fcberblick. Strukturiert, priorisiert, leitlinienbasiert.",
+    url: "https://www.anavio.de/fuer-aerzte",
+  },
+};
 
 export default function FuerAerzte() {
   return (

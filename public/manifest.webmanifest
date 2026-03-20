@@ -1,0 +1,21 @@
+{
+  "name": "anavio – Digitale Anamnese",
+  "short_name": "anavio",
+  "description": "Digitale Anamnese für Arztpraxen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7FAFA",
+  "theme_color": "#0C8A72",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

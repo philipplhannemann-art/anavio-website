@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Allgemeine Gesch\u00e4ftsbedingungen",
+  description: "AGB von anavio f\u00fcr die Nutzung der digitalen Anamnese-Plattform. Leistungsbeschreibung, Datenschutz und Vertragsbedingungen.",
+  alternates: { canonical: "https://www.anavio.de/agb" },
+};
 
 export default function AGB() {
   return (

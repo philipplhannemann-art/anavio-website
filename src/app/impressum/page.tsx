@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Impressum",
+  description: "Impressum von anavio \u2013 Digitale Anamnese f\u00fcr Arztpraxen. Angaben gem\u00e4\u00df \u00a7 5 TMG.",
+  alternates: { canonical: "https://www.anavio.de/impressum" },
+};
 
 export default function Impressum() {
   return (
